@@ -1,0 +1,14 @@
+label {
+    margin-right: 3em;
+    width: 40em;
+    display: inline-block;
+}
+#Currentorder  {
+    height: 8em;
+    border: black solid 1px;
+    width: 43em;
+}
+fieldset {
+    width: 40em;
+}
+

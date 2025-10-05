@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Brians Bevvies</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="main.js" defer></script>
+</head>
+<body>
+    <h1>Drinks order</h1>
+    <!-- Type -->
+    <fieldset>
+        <legend>Type</legend>
+        <p>
+            <input Type="radio" id="smoothie" name="Type" value="smoothie">
+            <label for="smoothie">Smoothie</label>
+        </p>
+        <p>
+            <input Type="radio" id="milkshake" name="Type" value="milkshake">
+            <label for="milkshake">Milkshake</label>
+        </p>
+    </fieldset>
+    <!-- Size -->
+    <fieldset>
+        <legend>Size</legend>
+        <p>
+            <input type="radio" id="small" name="size" value="small">
+            <label for="small">Small-£2.70</label>
+        </p>
+        <p>
+            <input type="radio" id="medium" name="size" value="medium" checked>
+            <label for="medium">Medium-£3.20</label>
+        </p>
+        <p>
+            <input type="radio" id="large" name="size" value="large">
+            <label for="large">Large-£3.70</label>
+        </p>
+        <p>
+            <input type="radio" id="Extra large" name="size" value="Extra large">
+            <label for=" Extra large">Extra Large-£4.50</label>
+        </p>
+    </fieldset>
+    <!-- Ingredients -->
+    <fieldset>
+        <legend>Ingredients </legend>
+        <form id="Ingredients"></form>
+    <p>
+        <label for="banana">banana</label>
+        <input type="checkbox" id="banana" name="Ingredients" value="banana">
+    </p>
+    <p>
+        <label for="rasberry">rasberry</label>
+        <input type="checkbox" id="rasberry" name="Ingredients" value="rasberry">
+    </p>
+    <p>
+        <label for="cranberry">cranberry</label>
+        <input type="checkbox" id="cranberry" name="Ingredients" value="cranberry">
+    </p>
+    <p>
+        <label for="strawberry">strawberry</label>
+        <input type="checkbox" id="strawberry" name="Ingredients" value="strawberry">
+    </p>
+    <p>
+        <label for="chocolate">chocolate</label>
+        <input type="checkbox" id="chocolate" name="Ingredients" value="chocolate">
+    </p>
+    <P> <button type="Ingredients select" id="select ingredients">Select Ingredients</button>
+    </P>
+    </fieldset>
+    <!-- Smoothie Bases -->
+    <fieldset  id="smoothie fieldset">
+        <legend>Smoothie Base</legend>
+    <p>
+        <input Type="radio" id="Apple juice" name="Smoothie Base" value="Apple Juice">
+        <label for="Apple juice">Apple Juice</label>
+    </p>
+    <p>
+        <input Type="radio" id="Orange juice" name="Smoothie Base" value="Orange Juice" checked>
+        <label for="Orange Juice">Orange Juice</label>
+    </p>
+    </fieldset> 
+    <!-- Milkshake Bases -->
+    <fieldset  id="milkshake fieldset">
+        <legend>Milkshake Bases</legend>
+    <p>
+        <label for="Base">Base:</label>
+        <select id="Base" name="Base:">
+            <option value="Whole Milk">Whole Milk</option>
+            <option value="Semi-Skimmed Milk">Semi-Skimmed Milk</option>
+            <option value="Skimmed Milk" selected>Skimmed Milk</option>
+            <option value="Coconut Milk">Coconut Milk</option>
+            <option value="Oat Milk">Oat Milk</option>
+        </select>
+    </p>
+    </fieldset>
+    <!-- Milkshake Extra's -->
+    <fieldset  id="Extras fieldset">
+        <legend>Extras-85p Each</legend>
+    <p>
+        <label for="Malt">Malt</label>
+        <input type="checkbox" id="Malt" name="Extras" value="Malt">
+    </p>
+    <p>
+        <label for="Marshmallows">Marshmallows</label>
+        <input type="checkbox" id="Marshmallows" name="Extras" value="Marshmallows">
+    </p>
+    <p>
+        <label for="Whipped Cream">Whipped Cream</label>
+        <input type="checkbox" id="Whipped Cream" name="Extras" value="Whipped Cream">
+    </p>
+    <p>
+        <label for="A Flake">A Flake</label>
+        <input type="checkbox" id="A Flake" name="Extras" value="A Flake">
+    </p>
+    <P> <button type="Extras select" id="select Extras">Select Extras</button>
+    </P>
+    </fieldset>
+    <!-- current drink -->
+    <fieldset>
+        <legend>Current Drink</legend>
+        <p id="CurrentDrink"></p>
+    </fieldset>
+    <!-- add to order -->
+    <p><button Type="button" id="add">Add to order</button></p>   
+    <!-- Current Order -->
+    <fieldset>
+        <legend>Current Order</legend>
+        <p id="Currentorder"></p>
+    </fieldset>
+    <!-- Order Total -->
+    <fieldset>
+        <legend>ORDER TOTAL</legend>
+        <label for="Order Total:" id="OrderTotal"></label>
+    </fieldset>
+</body>
+</html>
